@@ -44,8 +44,8 @@ pred_data = pd.DataFrame(data,columns=["State","Month","Avg_Humidity","Avg_Tempe
 
 if(st.checkbox("Show Data")):
     st.write(pred_data.head(10))
-    st.write("Total Records: "+pred_data.shape[0])
-    st.write("Total Features: "+pred_data.shape[1])
+    st.write("Total Records: "+str(pred_data.shape[0]))
+    st.write("Total Features: "+str(pred_data.shape[1]))
     st.write(pred_data.describe())
 # .get_dummies() Converts categorical variables into numerical (binary) columns using one-hot encoding.
 # columns=["State","Month"] Specifies that only the State and Month columns should be encoded.
